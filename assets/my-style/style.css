@@ -129,14 +129,19 @@ span.img-infor:hover {
   background-color: rgba(55, 125, 255, 0.1);
   color: #377dff;
 }
-
+.notice-icon .notice-bubble {
+  display: none;
+}
+.notice-icon:hover .notice-bubble {
+  display: block;
+}
 .notice-icon:hover i {
   color: #377dff;
 }
-
+.notice-item:hover {
+  background-color: #f9fafc;
+}
 span.img-infor {
-  width: 32px;
-  height: 32px;
   border-radius: 50%;
   background-color: #f7dcb9;
   color: var(--icon);
@@ -252,6 +257,14 @@ a.nav-link.active {
 
 .calendar-content {
   height: calc(100vh - var(--h-header) - 54px);
+}
+.calendar-content .morning-item:hover {
+  background-color: #cff4fc;
+  /* #cff4fc */
+}
+.calendar-content .affternoon-item:hover {
+  background-color: #fff3cd;
+  /* #cff4fc */
 }
 @media (max-width: 576px) {
   .calendar-content {
